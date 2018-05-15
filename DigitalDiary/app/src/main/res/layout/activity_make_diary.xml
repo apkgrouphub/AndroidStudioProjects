@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentLeft="true"
+    android:background="#000000"
+    >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_make_diary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diary.MakeDiaryActivity"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="@drawable/note_linearlayout_form"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_weight="0.03"
+            android:gravity="center"
+            android:background="@drawable/note_textview_stoke_bg">
+
+            <TextView
+                android:text="Wednesday | 10/6/2017 | 10:00 PM"
+                android:textSize="18dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:id="@+id/textView"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.97"
+            android:orientation="vertical"
+            android:weightSum="2" >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/text_remark"
+                android:hint="How is your day"
+                android:background="@drawable/note_edtext_remark_bg"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2dp"
+                android:paddingLeft="15dp"
+                android:layout_weight="0.17">
+
+                </EditText>
+            <view
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.mrcom.digitaldiary.MakeDiaryActivity$LineEditText"
+                android:background="@android:color/transparent"
+                android:fadingEdge="vertical"
+                android:gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:scrollbars="vertical"
+                android:textSize="22sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:textStyle="normal"
+                android:layout_weight="1.88" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabfileatta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_fileattach"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="241dp"
+        android:layout_marginRight="26dp"
+        app:backgroundTint="@color/colorfabfileatta"
+        app:fabSize="normal"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabaudreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_audiomic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="170dp"
+        android:layout_marginRight="26dp"
+        app:backgroundTint="@color/colorAudeorec"
+        app:fabSize="normal"
+        android:visibility="invisible"
+       />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabvidreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_video"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="26dp"
+        app:backgroundTint="@color/colorVideorec"
+        app:fabSize="normal"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_add_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="26dp"
+        app:backgroundTint="@color/coloradddiary"
+        app:pressedTranslationZ="12dp"
+        app:fabSize="normal"/>
+
+</android.support.design.widget.CoordinatorLayout>

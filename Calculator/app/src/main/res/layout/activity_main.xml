@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#000000"
+    tools:context="com.mrcom.calculator.MainActivity">
+
+    <Button
+        android:text="="
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edteql"
+        android:background="@drawable/button_click"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/edt0"
+        android:layout_toEndOf="@+id/edt0"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="+"
+        android:layout_width="62dp"
+        android:layout_height="80dp"
+        android:id="@+id/edtadd"
+        android:background="@drawable/button_click"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/edteql"
+        android:layout_toEndOf="@+id/edteql"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="0"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt0"
+        android:background="@drawable/button_click"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/edtpoint"
+        android:layout_toEndOf="@+id/edtpoint"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt1"
+        android:background="@drawable/button_click"
+        android:layout_above="@+id/edtpoint"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt4"
+        android:background="@drawable/button_click"
+        android:layout_above="@+id/edt1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt7"
+        android:background="@drawable/button_click"
+        android:layout_above="@+id/edt4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt8"
+        android:background="@drawable/button_click"
+        android:layout_above="@+id/edt6"
+        android:layout_toRightOf="@+id/edt7"
+        android:layout_toEndOf="@+id/edt7"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt5"
+        android:background="@drawable/button_click"
+        android:layout_below="@+id/edt8"
+        android:layout_toRightOf="@+id/edt1"
+        android:layout_toEndOf="@+id/edt1"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt2"
+        android:layout_below="@+id/edt6"
+        android:layout_toRightOf="@+id/edt1"
+        android:layout_toEndOf="@+id/edt1"
+        android:background="@drawable/button_click"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt3"
+        android:layout_above="@+id/edteql"
+        android:layout_toRightOf="@+id/edt0"
+        android:background="@drawable/button_click"
+        android:layout_toEndOf="@+id/edt0"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="-"
+        android:layout_width="62dp"
+        android:layout_height="80dp"
+        android:id="@+id/edtsub"
+        android:layout_above="@+id/edtadd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/edteql"
+        android:layout_toEndOf="@+id/edteql"
+        android:background="@drawable/button_click"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="62dp"
+        android:layout_height="80dp"
+        android:id="@+id/edtdiv"
+        android:layout_above="@+id/edtmul"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/edt6"
+        android:background="@drawable/button_click"
+        android:layout_toEndOf="@+id/edt6"
+        android:textSize="30sp"
+        android:text="/" />
+
+
+    <Button
+        android:text="9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/edt9"
+        android:layout_alignTop="@+id/edtdiv"
+        android:layout_toRightOf="@+id/edt8"
+        android:layout_toEndOf="@+id/edt8"
+        android:background="@drawable/button_click"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="*"
+        android:layout_width="62dp"
+        android:layout_height="80dp"
+        android:id="@+id/edtmul"
+        android:layout_alignTop="@+id/edt6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_click"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/edt6"
+        android:layout_toEndOf="@+id/edt6" />
+
+    <Button
+        android:text="6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_click"
+        android:id="@+id/edt6"
+        android:textSize="30sp"
+        android:layout_above="@+id/edt3"
+        android:layout_toRightOf="@+id/edt8"
+        android:layout_toEndOf="@+id/edt8" />
+
+    <Button
+        android:text="."
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_click"
+        android:id="@+id/edtpoint"
+        android:textSize="36sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:ems="10"
+        android:textSize="40sp"
+        android:id="@+id/result"
+        android:gravity="end"
+        android:textColor="#ffffff"
+        android:background="@drawable/edittext_style"
+        android:maxLines="1"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_click"
+        android:id="@+id/clear"
+        android:layout_below="@+id/result"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="[]"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnpi"
+        android:background="@drawable/button_click"
+        android:textSize="30sp"
+        android:layout_below="@+id/result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/clear" />
+
+
+</RelativeLayout>

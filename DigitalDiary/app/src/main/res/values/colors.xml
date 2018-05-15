@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="coloradddiary">#780000</color>
+    <color name="colorVideorec">#c90101</color>
+    <color name="colorAudeorec">#ff0000</color>
+    <color name="colorfabfileatta">#e53935</color>
+    <color name="Login_bg_color_1">#e65100</color>
+    <color name="Login_bg_color_2">#fb8c00</color>
+    <color name="Login_bg_color_3">#ffa726</color>
+    <color name="Login_button_color_1">#FF8C00</color>
+    <color name="Login_button_color_2">#FF4500</color>
+</resources>

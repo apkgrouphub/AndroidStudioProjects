@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"> </corners>
+    <stroke android:color="#000000"
+        android:width="2dp"> </stroke>
+    <solid android:color="#ffffff"> </solid>
+    <gradient
+        android:startColor="@color/Login_bg_color_1"
+        android:centerColor="@color/Login_bg_color_2"
+        android:endColor="@color/Login_bg_color_3"
+        android:angle="45"
+        android:type="linear"> </gradient>
+</shape>

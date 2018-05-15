@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diary">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_diarynote"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"
+            android:label="Registration"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVTY"
+                android:value=".LoginActivity"/>
+        </activity>
+        <activity android:name=".MakeDiaryActivity"
+            android:label="Diary"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVTY"
+                android:value=".MainActivity"/>
+
+        </activity>
+        <activity android:name=".Event_Add_Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".Audio_Rec_Activity"
+            android:label="Audio Recording"
+            >
+        </activity>
+        <activity android:name=".diary_show"
+            android:label="View Diary"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVTY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".AudioVideo"/>
+        <activity android:name=".Videoview"/>
+        <activity android:name=".Audioview"/>
+    </application>
+
+</manifest>
